@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:layout_margin="16dp"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/input_background"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Register"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/EditTextone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_background"
+        android:drawableLeft="@drawable/ic_person"
+        android:drawablePadding="10dp"
+        android:hint="Username"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColorHint="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRegister"
+        tools:layout_editor_absoluteX="-57dp" />
+
+    <EditText
+        android:id="@+id/EditTextTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/input_background"
+        android:drawableLeft="@drawable/ic_email"
+        android:drawablePadding="10dp"
+        android:hint="Email"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColorHint="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/EditTextone"
+        tools:layout_editor_absoluteX="10dp" />
+
+    <EditText
+        android:id="@+id/EditTextThree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/input_background"
+        android:drawableLeft="@drawable/ic_security"
+        android:drawablePadding="10dp"
+        android:hint="password"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColorHint="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/EditTextTwo"
+        tools:layout_editor_absoluteX="10dp" />
+
+    <EditText
+        android:id="@+id/EditTextFour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/input_background"
+        android:drawableLeft="@drawable/ic_security"
+        android:drawablePadding="10dp"
+        android:hint="enter the password again"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColorHint="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/EditTextThree"
+        tools:layout_editor_absoluteX="10dp" />
+
+    <Button
+        android:id="@+id/ButtonRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="72dp"
+        android:background="@drawable/button_background"
+        android:gravity="center_horizontal"
+        android:text="Register"
+        android:textAllCaps="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditTextFour"
+        app:layout_goneMarginTop="20dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/TextViewLast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="190dp"
+        android:background="@drawable/input_background"
+        android:gravity="center"
+        android:minHeight="48dp"
+        android:onClick="accountClick"
+        android:padding="5dp"
+        android:text="already have an account"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.552"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ButtonRegister"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
